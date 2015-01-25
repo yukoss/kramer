@@ -1,0 +1,85 @@
+/*============================HEADER============================*/
+
+.bg-video
+  display: block
+  position: relative
+  width: 100%
+  background: url("../images/bg-one.jpg")
+  background-size: cover
+  background-color: rgba(52, 73, 94, 0.5)
+  overflow: hidden
+
+video
+  position: absolute
+  top: 0
+  left: 0
+  min-width: 100%
+  min-height: 100%
+  width: auto
+  height: auto
+  z-index: -1
+  -webkit-object-fit: cover
+  -moz-object-fit: cover
+  -o-object-fit: cover
+  -m-object-fit: cover
+  object-fit: cover
+
+.wrapper-header
+  height: 777px
+  header
+    margin-top: 47px
+    .nav
+      height: 52px
+      font: 1.8em "Droid Sans"
+      z-index: 2
+      a
+        margin-left: 40px
+        padding: 18px 0 17px
+        float: left
+        color: #fff
+        text-decoration: none
+    .navbar-inverse
+      background: none
+
+#navbar
+  -webkit-box-shadow: none
+  box-shadow: none
+
+.navbar-inverse .navbar-toggle
+  border: none
+  &:hover,
+  &:focus
+    background-color: none
+
+.welcome
+  margin-top: 130px
+  margin-bottom: 100px
+  padding: 0 30px
+  font: bold 80px "Droid Sans"
+  text-align: center
+
+.b-explore
+  margin-top: 123px
+  margin-left: auto
+  margin-right: auto
+  width: 92px
+  height: 100px
+  font-family: "Droid Serif"
+  font-size: 27px
+  text-align: center
+  &>span
+    margin-left: -25px
+
+.explore
+  display: block
+  margin-bottom: 18px
+  padding: 0 15px
+  width: 60px
+  height: 60px
+  @include br(30px)
+  background: #2ecc71 url(../images/tick.png) no-repeat center
+  @include trs($time)
+  &:hover
+    cursor: pointer
+  &:active
+    transform: translateY(20px)

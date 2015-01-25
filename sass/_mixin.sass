@@ -1,0 +1,13 @@
+@import "variable"
+
+@mixin br($r)
+  -webkit-border-radius: ($r)
+  -moz-border-radius: ($r)
+  border-radius: ($r)
+
+@mixin trs($time)
+  -webkit-transition: $time
+  -moz-transition: $time
+  -ms-transition: $time
+  -o-transition: $time
+  transition: $time

@@ -1,0 +1,467 @@
+/*============================RESET CSS============================ */
+body {
+  font-size: 14px;
+  color: #fff; }
+
+h1, h2, h3, h4, h5, h6, p, header, section, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #fff; }
+
+:focus {
+  outline: none; }
+
+.clear {
+  float: none; }
+
+/*============================HEADER============================ */
+.bg-video {
+  display: block;
+  position: relative;
+  width: 100%;
+  background: url("../images/bg-one.jpg");
+  background-size: cover;
+  background-color: rgba(52, 73, 94, 0.5);
+  overflow: hidden; }
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  -webkit-object-fit: cover;
+  -moz-object-fit: cover;
+  -o-object-fit: cover;
+  -m-object-fit: cover;
+  object-fit: cover; }
+
+.wrapper-header {
+  height: 777px; }
+  .wrapper-header header {
+    margin-top: 47px; }
+    .wrapper-header header .nav {
+      height: 52px;
+      font: 1.8em "Droid Sans";
+      z-index: 2; }
+      .wrapper-header header .nav a {
+        margin-left: 40px;
+        padding: 18px 0 17px;
+        float: left;
+        color: #fff;
+        text-decoration: none; }
+    .wrapper-header header .navbar-inverse {
+      background: none; }
+
+#navbar {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.navbar-inverse .navbar-toggle {
+  border: none; }
+  .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: none; }
+
+.welcome {
+  margin-top: 130px;
+  margin-bottom: 100px;
+  padding: 0 30px;
+  font: bold 80px "Droid Sans";
+  text-align: center; }
+
+.b-explore {
+  margin-top: 123px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 92px;
+  height: 100px;
+  font-family: "Droid Serif";
+  font-size: 27px;
+  text-align: center; }
+  .b-explore > span {
+    margin-left: -25px; }
+
+.explore {
+  display: block;
+  margin-bottom: 18px;
+  padding: 0 15px;
+  width: 60px;
+  height: 60px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background: #2ecc71 url(../images/tick.png) no-repeat center;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .explore:hover {
+    cursor: pointer; }
+  .explore:active {
+    transform: translateY(20px); }
+
+/*============================FONTS============================ */
+@font-face {
+  font-family: "Droid Sans";
+  src: url(../fonts/Droid_Sans/droidsans-webfont.eot);
+  src: url(../fonts/Droid_Sans/droidsans-webfont.eot) format "embedded-opentype", url(../fonts/Droid_Sans/DroidSans.ttf) format("truetype"), url(../fonts/Droid_Sans/droidsans-webfont.svg) format("svg"); }
+@font-face {
+  font-family: "Droid Serif";
+  src: url(../fonts/Droid_Serif/droidserif-webfont.eot);
+  src: url(../fonts/Droid_Serif/droidserif-webfont.eot) format("embedded-open-type"), url(../fonts/Droid_Serif/DroidSerif.ttf) format("truetype"), url(../fonts/Droid_Serif/droidserif-webfont.svg) format("svg"); }
+/*============================CONTENT============================ */
+h2 {
+  font: bold 45px "Droid Sans";
+  text-align: center; }
+
+/*---------------About Block--------------- */
+.content-about {
+  height: 100%;
+  background: #34495e;
+  font: bold 45px "Droid Sans";
+  text-align: center; }
+  .content-about h2 {
+    padding: 125px 0 68px;
+    line-height: 36px; }
+  .content-about p {
+    margin: 0 auto;
+    max-width: 710px;
+    font: 24px "Droid Serif";
+    line-height: 1.5;
+    text-align: left; }
+
+.content-about-item {
+  margin-top: 134px;
+  font: bold 26px "Droid Sans";
+  height: 100%; }
+  .content-about-item li {
+    margin-bottom: 90px;
+    padding: 0;
+    text-align: center; }
+    .content-about-item li .description:before {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      width: 153px;
+      height: 152px;
+      background: url(../images/sprite-about.png) no-repeat; }
+    .content-about-item li.services .description:before {
+      background-position: 0 0; }
+    .content-about-item li.retina .description:before {
+      background-position: -163px 0; }
+    .content-about-item li.support .description:before {
+      background-position: -326px 0; }
+  .content-about-item h3 {
+    margin: 30px 0; }
+  .content-about-item p {
+    font: normal 20px "Droid Serif";
+    line-height: 30px;
+    text-align: center; }
+
+/*---------------Fixed Nav--------------- */
+#fixed-nav {
+  position: fixed;
+  top: -70px;
+  padding-top: 8px;
+  width: 100%;
+  height: 70px;
+  background-color: #2c3e50;
+  z-index: 2; }
+  #fixed-nav .nav {
+    height: 52px;
+    font: 22px "Droid Sans"; }
+    #fixed-nav .nav a {
+      margin-left: 40px;
+      padding: 18px 0 17px;
+      float: left;
+      color: #fff;
+      text-decoration: none; }
+
+/*---------------Portfolio Block---------- */
+.content-portfolio {
+  padding-top: 124px;
+  color: #2c3e50;
+  overflow: hidden; }
+  .content-portfolio li a:hover {
+    background: #2ecc71;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 23px;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px; }
+  .content-portfolio h2 {
+    line-height: 36px; }
+  .content-portfolio .menu {
+    margin-top: 67px;
+    margin-bottom: 83px;
+    height: 100%; }
+    .content-portfolio .menu li {
+      margin-right: 15px;
+      margin-bottom: 20px;
+      float: left;
+      line-height: 20px; }
+    .content-portfolio .menu a {
+      padding: 6px 21px 8px 23px;
+      height: 30px;
+      font: 30px "Droid Sans";
+      color: #2c3e50; }
+
+figure {
+  display: block;
+  margin: 0 0 111px;
+  text-align: center; }
+  figure .content-portfolio-item {
+    margin: 0; }
+    figure .content-portfolio-item li {
+      padding: 0;
+      margin-bottom: 29px; }
+    figure .content-portfolio-item p {
+      margin: 104px 0 25px;
+      font: bold 35px "Droid Sans";
+      color: #fff; }
+    figure .content-portfolio-item a {
+      display: inline-block;
+      padding-top: 8px;
+      width: 110px;
+      height: 32px;
+      border: 1px solid #fff;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      font: 12px "Droid Serif";
+      color: #fff; }
+      figure .content-portfolio-item a:hover {
+        text-decoration: none; }
+    figure .content-portfolio-item img {
+      display: block;
+      width: 348px;
+      height: 257px;
+      padding: 10px;
+      border: 1px solid #e9e9e9; }
+  figure div {
+    display: none;
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    width: 326px;
+    height: 237px;
+    background: rgba(52, 73, 94, 0.95); }
+  figure li:hover div {
+    display: block; }
+
+/*---------------Team Block---------------- */
+.content-team {
+  padding-top: 123px;
+  padding-bottom: 106px;
+  background: #2980b9; }
+  .content-team h2 {
+    font: bold 45px "Droid Sans";
+    margin-bottom: 71px;
+    line-height: 36px; }
+  .content-team ul {
+    margin-left: -150px; }
+  .content-team li {
+    text-align: center; }
+    .content-team li:nth-child(2n-1) {
+      margin-bottom: 90px; }
+  .content-team p {
+    margin-bottom: 51px;
+    font: 20px "Droid Serif";
+    line-height: 1.5; }
+
+h3 {
+  margin: 30px 0;
+  font: bold 26px "Droid Sans"; }
+
+.team-item-i {
+  margin-left: 29px; }
+
+/*---------------Contact Block------------- */
+.content-contact {
+  padding: 122px 0 100px;
+  font: bold 45px "Droid Sans";
+  color: #2c3e50; }
+  .content-contact p {
+    margin-top: 67px;
+    margin-bottom: 87px;
+    font-size: 26px; }
+
+.vcard {
+  width: 220px;
+  float: right;
+  font: 25px "Droid Sans";
+  color: #2c3e50; }
+  .vcard .head {
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: bold; }
+  .vcard .adr,
+  .vcard .email,
+  .vcard .tel {
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: normal; }
+  .vcard a {
+    display: block;
+    text-decoration: none;
+    color: #2c3e50; }
+
+form input, form textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #2ecc71;
+  font: 26px "Droid Serif";
+  vertical-align: top; }
+form li {
+  margin-bottom: 56px;
+  line-height: 21px; }
+form input {
+  height: 36px; }
+form textarea {
+  margin-top: 12px;
+  resize: none; }
+
+input::-webkit-input-placeholder, input:-moz-placeholder {
+  font: 26px "Droid Serif";
+  color: #2c3e50; }
+
+textarea::-webkit-input-placeholder, textarea:-moz-placeholder {
+  font: 26px "Droid Serif";
+  color: #2c3e50; }
+
+input[type=submit] {
+  margin-top: -10px;
+  width: 130px;
+  height: 47px;
+  border: 0;
+  background: #2ecc71;
+  font: 21px "Droid Serif";
+  color: #fff;
+  border-radius: 23px;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px; }
+
+/*============================FOOTER============================ */
+footer {
+  padding: 75px 0 67px 155px;
+  background: #2c3e50; }
+  footer p {
+    margin-bottom: 39px; }
+  footer address {
+    margin-right: 107px;
+    padding-top: 10px;
+    height: 56px;
+    line-height: 1.5;
+    font-style: normal;
+    float: left; }
+    footer address span {
+      display: inline-block; }
+      footer address span:nth-child(2n+1) {
+        margin-right: 139px; }
+  footer ul {
+    overflow: hidden; }
+  footer a {
+    display: block;
+    width: 59px;
+    height: 58px;
+    text-indent: -9999px;
+    float: left;
+    background: url("../images/social-icon.png") no-repeat;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    footer a:hover {
+      transform: rotate(20deg); }
+    footer a:hover:nth-child(even) {
+      transform: rotate(-20deg); }
+
+.footer-item-f {
+  margin-left: 23px;
+  background-position: -83px; }
+
+.footer-item-i {
+  margin-left: 23px;
+  background-position: -165px; }
+
+/*============================MEDIA QUERIES============================ */
+@media (min-width: 1200px) {
+  .content-about-item li:nth-child(1n+2) {
+    margin-left: 0; } }
+@media (min-width: 768px) and (max-width: 992px) {
+  h2.welcome {
+    font-size: 60px; } }
+@media (max-width: 768px) {
+  h2.welcome {
+    font-size: 35px; }
+
+  #fixed-nav .nav {
+    display: none;
+    margin-top: 50px;
+    padding-top: 35px;
+    width: 100%;
+    height: 100%;
+    background-color: #2c3e50;
+    text-align: left; }
+    #fixed-nav .nav a {
+      display: block;
+      margin-left: 0;
+      padding-left: 30px;
+      float: none; }
+      #fixed-nav .nav a:hover {
+        background-color: #2ecc71; }
+  #fixed-nav .navbar-inverse .navbar-toggle:focus span.icon-bar {
+    background-color: #2ecc71; }
+  #fixed-nav .show {
+    display: block; }
+
+  .content-about p {
+    padding: 0 15px; }
+
+  .content-team ul {
+    margin-left: 0; }
+
+  .content-contact {
+    padding: 15px; }
+
+  form input[type=submit] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none; }
+
+  .vcard {
+    margin-top: 80px;
+    float: left; }
+
+  footer {
+    padding-left: 15px; }
+    footer address {
+      margin-bottom: 40px;
+      height: 100%;
+      float: none; }
+      footer address span:nth-child(2n+1) {
+        margin-right: 0; }
+      footer address span:nth-child(2n) {
+        margin-top: 25px; } }
+@media (min-width: 992px) {
+  figure {
+    padding-left: 100px; } }
+@media (min-width: 1024px) {
+  figure {
+    padding-left: 0; } }
+/*# sourceMappingURL=main.css.map */
+
+/*# sourceMappingURL=main.css.map */
