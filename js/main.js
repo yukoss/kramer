@@ -37,6 +37,6 @@ setInterval(function(){
 //============Menu Mobile==============//
 (jQuery)(document).ready(function() {
     $("#fixed-nav button").click(function(){
-        $("#fixed-nav nav").slideToggle(500).addClass(".show");
+        $("#fixed-nav nav").slideToggle(500);
     });
 });

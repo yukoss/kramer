@@ -7,8 +7,8 @@
 
 @font-face
   font-family: "Droid Serif"
-  src: url(../fonts/Droid_Serif/droidserif-bold-webfont.eot)
-  src: url(../fonts/Droid_Serif/droidserif-bold-webfont.eot) format("embedded-open-type"), url(../fonts/Droid_Serif/DroidSerif.ttf) format("truetype"), url(../fonts/Droid_Serif/droidserif-bold-webfont.svg) format("svg")
+  src: url(../fonts/Droid_Serif/droidserif-webfont.eot)
+  src: url(../fonts/Droid_Serif/droidserif-webfont.eot) format("embedded-open-type"), url(../fonts/Droid_Serif/DroidSerif.ttf) format("truetype"), url(../fonts/Droid_Serif/droidserif-webfont.svg) format("svg")
 
 /*============================CONTENT============================*/
 
@@ -173,6 +173,20 @@ figure
     text-align: center
     &:nth-child(2n-1)
       margin-bottom: 90px
+    a
+      @include social-icon
+      -webkit-transition: 0.3s
+      -moz-transition: 0.3s
+      -ms-transition: 0.3s
+      -o-transition: 0.3s
+      transition: 0.3s
+      &:nth-child(2n+1)
+        margin-left: 20px
+      &:hover
+        transform: rotate(20deg)
+      &:hover:nth-child(2n+1)
+        transform: rotate(-20deg)
+
   p
     margin-bottom: 51px
     font: 20px "Droid Serif"

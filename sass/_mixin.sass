@@ -11,3 +11,16 @@
   -ms-transition: $time
   -o-transition: $time
   transition: $time
+
+@mixin social-icon
+  display: inline-block
+  width: 59px
+  height: 58px
+  text-indent: -9999px
+  background: url(../images/social-icon.png)
+  &.twitter-icon
+    background-position: 0 0
+  &.instagram-icon
+    background-position: -165px 0
+  &.facebook-icon
+    background-position: -83px 0

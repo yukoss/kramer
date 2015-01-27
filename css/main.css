@@ -52,8 +52,7 @@ video {
     margin-top: 47px; }
     .wrapper-header header .nav {
       height: 52px;
-      font: 1.8em "Droid Sans";
-      z-index: 2; }
+      font: 1.8em "Droid Sans"; }
       .wrapper-header header .nav a {
         margin-left: 40px;
         padding: 18px 0 17px;
@@ -275,6 +274,29 @@ figure {
     text-align: center; }
     .content-team li:nth-child(2n-1) {
       margin-bottom: 90px; }
+    .content-team li a {
+      display: inline-block;
+      width: 59px;
+      height: 58px;
+      text-indent: -9999px;
+      background: url(../images/social-icon.png);
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+      .content-team li a.twitter-icon {
+        background-position: 0 0; }
+      .content-team li a.instagram-icon {
+        background-position: -165px 0; }
+      .content-team li a.facebook-icon {
+        background-position: -83px 0; }
+      .content-team li a:nth-child(2n+1) {
+        margin-left: 20px; }
+      .content-team li a:hover {
+        transform: rotate(20deg); }
+      .content-team li a:hover:nth-child(2n+1) {
+        transform: rotate(-20deg); }
   .content-team p {
     margin-bottom: 51px;
     font: 20px "Droid Serif";
@@ -371,30 +393,31 @@ footer {
         margin-right: 139px; }
   footer ul {
     overflow: hidden; }
-  footer a {
-    display: block;
-    width: 59px;
-    height: 58px;
-    text-indent: -9999px;
+  footer li {
     float: left;
-    background: url("../images/social-icon.png") no-repeat;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
-    footer a:hover {
-      transform: rotate(20deg); }
-    footer a:hover:nth-child(even) {
+    footer li:nth-child(2n+1) {
+      margin: 0 20px; }
+    footer li:hover {
       transform: rotate(-20deg); }
-
-.footer-item-f {
-  margin-left: 23px;
-  background-position: -83px; }
-
-.footer-item-i {
-  margin-left: 23px;
-  background-position: -165px; }
+    footer li:hover:nth-child(2n+1) {
+      transform: rotate(20deg); }
+  footer a {
+    display: inline-block;
+    width: 59px;
+    height: 58px;
+    text-indent: -9999px;
+    background: url(../images/social-icon.png); }
+    footer a.twitter-icon {
+      background-position: 0 0; }
+    footer a.instagram-icon {
+      background-position: -165px 0; }
+    footer a.facebook-icon {
+      background-position: -83px 0; }
 
 /*============================MEDIA QUERIES============================ */
 @media (min-width: 1200px) {
@@ -406,6 +429,9 @@ footer {
 @media (max-width: 768px) {
   h2.welcome {
     font-size: 35px; }
+
+  .wrapper-header header .nav {
+    height: 100%; }
 
   #fixed-nav .nav {
     display: none;
